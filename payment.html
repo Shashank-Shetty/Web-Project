@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+
+<body>
+    <div class="checkout-panel">
+        <div class="panel-body">
+            <h2 class="title">PAYMENT</h2>
+            <div class="payment-method">
+                <label for="card" class="method card">
+                    <div class="card-logos">
+                        <img src="image60.jpg" />
+
+                    </div>
+
+                    <div class="radio-input">
+                        <input id="card" type="radio" name="payment">
+                        Pay with debit/credit card
+                    </div>
+                </label>
+
+                <label for="paypal" class="method paypal">
+                    <img src="image61.png" />
+                    <div class="radio-input">
+                        <input id="paypal" type="radio" name="payment">
+                        Pay with PayPal
+                    </div>
+                </label>
+            </div>
+            <form action="index.html">
+                <table class="form-table">
+                    <tr>
+                        <td>Card Holder's Name :</td>
+                        <td><input type="text" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Card Number :</td>
+                        <td><input class="num" type="number" max="16" min="16" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Valid thru :</td>
+                        <td><input type="text" data-mask="00/00" placeholder="MM/YY" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>CVV :</td>
+                        <td><input type="password" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><br />
+                            <button class="btn" onclick="myfunction()">PAY</button>
+                        </td>
+                    </tr>
+                    <script>
+                        function myfunction() {
+                            alert("Payment success");
+                        }
+                    </script>
+
+
+
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
